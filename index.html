@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div><h3>Weather</h3></div>
+        
+        <div id="container">
+
+            <div id="formfields">
+                <label for="txtLatitude">Enter the latitude</label>
+                <input type="text" id="txtLatitude" value="36.1716">
+                <br />
+                <br />
+                <label for="txtLongitude">Enter the longitude</label>
+                <input type="text" id="txtLongitude" value="-115.1391">
+                <br />
+                <br />
+                <button id="btnSubmit" onclick="getWeather();">Submit</button>
+            </div>
+        </div>
+
+        <div id="error">
+            <span id="errorSpan"></span>
+        </div>
+
+        <div id="result" class="hideDiv">
+            <h3>Detailed Forecast</h3>
+            <span id="spnDetailedForecast"></span>
+        </div>
+
+        <div id="locations">
+            
+        </div>
+
+        <script src="xhtmlRequest.js" ></script>
+    </body>
+</html>
